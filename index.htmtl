@@ -28,7 +28,16 @@
       text-decoration: underline;
     }
     .book {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      overflow: auto;
+    }
+    .book img {
+      float: left;
+      width: 120px;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -39,11 +48,13 @@
   <h2>Featured Titles</h2>
 
   <div class="book">
+    <img src="images/cover-baltic.jpg" alt="The Baltic Sanction cover">
     <h3><em>The Baltic Sanction</em></h3>
     <p>An explosive spy thriller set in the Baltic region. Follow intelligence agent Lex Jackson as he uncovers a deadly Russian plot threatening European stability.</p>
   </div>
 
   <div class="book">
+    <img src="images/cover-merchant.jpg" alt="The Merchant of the Black Market cover">
     <h3><em>The Merchant of the Black Market</em></h3>
     <p>A smuggling ring. A murdered antiques dealer. A trail of stolen art stretching across the Mediterranean. Lex Jackson and his Alpha Group team return in this high-stakes follow-up.</p>
   </div>
