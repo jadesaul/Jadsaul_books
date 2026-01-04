@@ -6,28 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jade Saul - Bestselling Author of The Baltic Sanction</title>
   <link rel="stylesheet" href="style.css">
+
   <style>
-    /* Inline CSS for the header banner and styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
       color: #333;
+      text-align: center;
     }
 
     header {
-      background-image: url('images/copenhagen.jpg'); /* Make sure this matches your folder and filename exactly */
+      background-image: url('images/copenhagen.jpg');
       background-size: cover;
       background-position: center;
       color: white;
       padding: 4em 1em;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin: 0.2em 0;
     }
 
     nav a {
@@ -38,62 +33,77 @@
     }
 
     .hero {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0,0,0,0.55);
       padding: 2em;
       border-radius: 8px;
       display: inline-block;
       margin-top: 2em;
     }
 
-    .hero h2 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-      margin-bottom: 1em;
+    .featured-book {
+      padding: 3em 1em;
+      max-width: 800px;
+      margin: auto;
     }
 
     .btn {
+      display: inline-block;
       background-color: #222;
       color: white;
       padding: 0.8em 1.5em;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+      margin-top: 1em;
     }
 
     footer {
       background-color: #222;
       color: white;
-      text-align: center;
       padding: 1em;
-      margin-top: 2em;
+      margin-top: 3em;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Jade Saul</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="books.html">Books</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h2>Welcome to My Official Author Website</h2>
-      <p>I am the bestselling author of <strong>The Baltic Sanction</strong>. Explore my spy thrillers full of suspense, intrigue, and high-stakes action.</p>
-      <a href="books.html" class="btn">Explore Books</a>
-    </section>
-  </main>
+<header>
+  <h1>Jade Saul</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="books.html">Books</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <footer>
-    <p>&copy; 2026 Jade Saul</p>
-  </footer>
+  <div class="hero">
+    <h2>Bestselling Author of <em>The Baltic Sanction</em></h2>
+    <a href="books.html" class="btn">Explore Books</a>
+  </div>
+</header>
+
+<main>
+  <section class="featured-book">
+    <h2>Available Novels</h2>
+
+    <h3>The Baltic Sanction</h3>
+    <p>
+      A bestselling spy thriller following CIA agent Lex Jackson across Europe as a covert operation spirals into an international crisis involving Russian intelligence, assassinations, and geopolitical brinkmanship.
+    </p>
+
+    <h3>The Merchant of the Black Market</h3>
+    <p>
+      When a Russian asset is assassinated in Berlin and an antiques dealer is found dead in the Mediterranean, Lex Jackson and Alpha Group uncover a deadly network operating in the shadows of Europe’s black markets.
+    </p>
+
+    <a href="books.html" class="btn">View Books</a>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Jade Saul</p>
+</footer>
+
 </body>
 </html>
