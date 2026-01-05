@@ -1,5 +1,5 @@
 
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -38,6 +38,10 @@
       font-weight: bold;
     }
 
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .hero {
       background: rgba(0,0,0,0.55);
       padding: 2em;
@@ -45,6 +49,11 @@
       display: inline-block;
       margin-top: 2em;
       color: white;
+      transition: transform 0.3s ease;
+    }
+
+    .hero:hover {
+      transform: scale(1.05);
     }
 
     .featured-books {
@@ -55,6 +64,15 @@
 
     .book {
       margin: 2em 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 1em;
+      border-radius: 8px;
+    }
+
+    .book:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      background-color: #fff;
     }
 
     .book img {
@@ -64,6 +82,11 @@
       display: block;
       margin: 0 auto 1em auto;
       border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .book img:hover {
+      transform: scale(1.05);
     }
 
     .btn {
@@ -75,6 +98,11 @@
       border-radius: 5px;
       font-weight: bold;
       margin-top: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #555;
     }
 
     .book .btn + .btn {
@@ -143,33 +171,3 @@
       <p>
         A bestselling spy thriller following CIA agent Lex Jackson across Europe as a covert operation spirals into an international crisis involving Russian intelligence, assassinations, and geopolitical brinkmanship.
       </p>
-      <a href="books.html" class="btn">View Book</a>
-      <a href="https://www.amazon.com/dp/B0BCWZ9PGR" class="btn" target="_blank">Buy Now</a>
-    </div>
-
-    <!-- The Merchant of the Black Market -->
-    <div class="book">
-      <img src="images/cover-merchant.jpg" alt="The Merchant of the Black Market cover">
-
-      <!-- Merchant of the Black Market Trailer -->
-      <div class="trailer">
-        <iframe src="https://www.youtube.com/embed/JN9X79fihk8" title="The Merchant of the Black Market Trailer" frameborder="0" allowfullscreen></iframe>
-      </div>
-
-      <h3>The Merchant of the Black Market</h3>
-      <p>
-        When a Russian asset is assassinated in Berlin and an antiques dealer is found dead in the Mediterranean, Lex Jackson and Alpha Group uncover a deadly network operating in the shadows of Europe’s black markets.
-      </p>
-      <a href="books.html" class="btn">View Book</a>
-      <a href="https://www.amazon.com/dp/B0CCN3HZTV" class="btn" target="_blank">Buy Now</a>
-    </div>
-
-  </section>
-</main>
-
-<footer>
-  <p>&copy; 2026 Jade Saul</p>
-</footer>
-
-</body>
-</html>
