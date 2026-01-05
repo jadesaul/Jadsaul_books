@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +27,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 400px; /* ensures banner height */
+      min-height: 400px;
     }
 
     nav a {
@@ -59,7 +58,7 @@
 
     .book img {
       max-width: 200px; /* smaller cover */
-      width: 100%;      /* responsive */
+      width: 100%;
       height: auto;
       display: block;
       margin: 0 auto 1em auto;
@@ -75,6 +74,11 @@
       border-radius: 5px;
       font-weight: bold;
       margin-top: 1em;
+    }
+
+    /* Add space between buttons */
+    .book .btn + .btn {
+      margin-left: 10px;
     }
 
     footer {
@@ -114,6 +118,7 @@
         A bestselling spy thriller following CIA agent Lex Jackson across Europe as a covert operation spirals into an international crisis involving Russian intelligence, assassinations, and geopolitical brinkmanship.
       </p>
       <a href="books.html" class="btn">View Book</a>
+      <a href="https://www.amazon.com/dp/YOUR-BALTIC-ID" class="btn" target="_blank">Buy Now</a>
     </div>
 
     <div class="book">
@@ -123,6 +128,7 @@
         When a Russian asset is assassinated in Berlin and an antiques dealer is found dead in the Mediterranean, Lex Jackson and Alpha Group uncover a deadly network operating in the shadows of Europe’s black markets.
       </p>
       <a href="books.html" class="btn">View Book</a>
+      <a href="https://www.amazon.com/dp/YOUR-MERCHANT-ID" class="btn" target="_blank">Buy Now</a>
     </div>
 
   </section>
@@ -134,5 +140,3 @@
 
 </body>
 </html>
-
- 
