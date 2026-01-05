@@ -3,34 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jade Saul - Bestselling Spy Thrillers</title>
+  <title>Jade Saul - Bestselling Author of The Baltic Sanction</title>
+  <link rel="stylesheet" href="style.css">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; text-align: center; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+    }
+
     header {
-      background-image: url('images/Copenhagen.jpg');
+      background-image: url('images/copenhagen.jpg');
       background-size: cover;
       background-position: center;
       color: white;
-      padding: 6em 1em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 400px;
+      padding: 4em 1em;
     }
-    nav a { color: white; margin: 0 1em; text-decoration: none; font-weight: bold; }
-    .hero { background: rgba(0,0,0,0.55); padding: 2em; border-radius: 8px; margin-top: 2em; }
-    .featured-books { padding: 3em 1em; max-width: 1000px; margin: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; }
-    .book { background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 1.5em; max-width: 400px; flex: 1 1 350px; text-align: center; }
-    .book img { max-width: 250px; width: 100%; height: auto; margin: 0 auto 1em; border-radius: 5px; }
-    .book h3 { margin-top: 0.5em; }
-    .book p { font-size: 1em; line-height: 1.5em; margin: 0.5em 0 1em; }
-    .btn { display: inline-block; background: #222; color: white; padding: 0.8em 1.5em; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 0.5em; }
-    .btn + .btn { margin-left: 10px; }
-    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1.5em auto; }
-    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-    footer { background: #222; color: white; padding: 1em; margin-top: 3em; }
+
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: rgba(0,0,0,0.55);
+      padding: 2em;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 2em;
+      color: white;
+    }
+
+    .featured-books {
+      padding: 3em 1em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .book {
+      margin: 3em 0;
+    }
+
+    .book img {
+      max-width: 220px;
+      display: block;
+      margin: 0 auto 1em auto;
+      border-radius: 5px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #222;
+      color: white;
+      padding: 0.8em 1.5em;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 0.5em;
+    }
+
+    iframe {
+      margin-top: 1em;
+      max-width: 100%;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 1em;
+      margin-top: 3em;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -38,40 +89,46 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
+    <a href="books.html">Books</a>
+    <a href="news.html">News</a>
     <a href="contact.html">Contact</a>
   </nav>
 
   <div class="hero">
-    <h2>Bestselling Spy Thrillers</h2>
-    <p>Explore suspense, intrigue, and high-stakes action across Europe.</p>
+    <h2>Bestselling Spy Thriller Author</h2>
+    <p>Author of <strong>The Baltic Sanction</strong> and <strong>The Merchant of the Black Market</strong>.</p>
   </div>
 </header>
 
 <main>
   <section class="featured-books">
+    <h2>Featured Books</h2>
 
     <!-- The Baltic Sanction -->
     <div class="book">
       <img src="images/cover-baltic.jpg" alt="The Baltic Sanction cover">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/fsVAxxioN48" title="The Baltic Sanction Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
       <h3>The Baltic Sanction</h3>
-      <p>A bestselling spy thriller following CIA agent Lex Jackson across Europe as a covert operation spirals into an international crisis involving Russian intelligence, assassinations, and geopolitical brinkmanship.</p>
-      <a href="https://www.amazon.com/dp/B0BCWZ9PGR" class="btn" target="_blank">View Book</a>
-      <a href="https://www.amazon.com/dp/B0BCWZ9PGR" class="btn" target="_blank">Buy Now</a>
+      <p>A bestselling spy thriller following CIA agent Lex Jackson across Europe as he uncovers a deadly international conspiracy.</p>
+
+      <a href="https://www.amazon.ca/dp/B0BCWZ9PGR" class="btn">Buy eBook (Canada)</a>
+      <a href="https://www.amazon.com/dp/B0BCWZ9PGR" class="btn">Buy eBook (US)</a>
+
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JN9X79fihk8" title="The Baltic Sanction Book Trailer" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
 
     <!-- The Merchant of the Black Market -->
     <div class="book">
       <img src="images/cover-merchant.jpg" alt="The Merchant of the Black Market cover">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/JN9X79fihk8" title="The Merchant of the Black Market Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
       <h3>The Merchant of the Black Market</h3>
-      <p>When a Russian asset is assassinated in Berlin and an antiques dealer is found dead in the Mediterranean, Lex Jackson and Alpha Group uncover a deadly network operating in the shadows of Europe’s black markets.</p>
-      <a href="https://www.amazon.com/dp/B0CCN3HZTV" class="btn" target="_blank">View Book</a>
-      <a href="https://www.amazon.com/dp/B0CCN3HZTV" class="btn" target="_blank">Buy Now</a>
+      <p>A high-stakes espionage thriller as Lena Pemberton navigates assassinations, black market deals, and international intrigue.</p>
+
+      <a href="https://www.amazon.com/dp/B0CCN3HZTV" class="btn">Buy on Amazon</a>
+
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fsVAxxioN48" title="The Merchant of the Black Market Book Trailer" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
 
   </section>
